@@ -25,6 +25,8 @@ public class Lutador {
         System.out.println("Com " + this.getIdade() + "Anose e " + this.getAltura());
         System.out.println("Pesando " + this.getPeso() + "Kg");
         System.out.println(this.getVitorias() + "Vitórias");
+        System.out.println(this.getDerrotas() + "Derrotas ");
+        System.out.println(this.getEmpate() + "Empates");
 }   
     public void status(){
         
