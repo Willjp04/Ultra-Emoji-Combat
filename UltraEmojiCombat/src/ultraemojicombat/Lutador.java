@@ -23,16 +23,16 @@ public class Lutador {
         System.out.println("CHEGOU A HORA ! Apresentamos o lutador " + this.getNome() );
         System.out.println("Diretamente de " + this.getNacionalidade());
         System.out.println("Com " + this.getIdade() + " Anos e " + this.getAltura());
-        System.out.println("Pesando " + this.getPeso() + "Kg");
-        System.out.println(this.getVitorias() + "Vitórias");
-        System.out.println(this.getDerrotas() + "Derrotas ");
-        System.out.println(this.getEmpate() + "Empates");
+        System.out.println("Pesando " + this.getPeso() + "Kg ");
+        System.out.println(this.getVitorias() + " Vitórias");
+        System.out.println(this.getDerrotas() + " Derrotas ");
+        System.out.println(this.getEmpate() + " Empates");
 }   
     public void status(){
         System.out.println("É UM PESO " + this.getCategoria());
-        System.out.println("GANHOU " + this.getVitorias() + "VEZES ");
-        System.out.println("PERDEU " + this.getDerrotas() + "VEZES ");
-        System.out.println("EMPATOU " + this.getDerrotas() + "VEZES ");
+        System.out.println(" GANHOU " + this.getVitorias() + " VEZES ");
+        System.out.println(" PERDEU " + this.getDerrotas() +  " VEZES ");
+        System.out.println(" EMPATOU " + this.getDerrotas() + " VEZES ");
    
                 
     }
@@ -54,7 +54,7 @@ public class Lutador {
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
-        this.peso = pe;
+        this.setPeso(pe);
         this.vitorias = vi;
         this.derrotas = de;
         this.empate = em;
