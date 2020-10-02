@@ -29,7 +29,12 @@ public class Lutador {
         System.out.println(this.getEmpate() + "Empates");
 }   
     public void status(){
-        
+        System.out.println("É UM PESO " + this.getCategoria());
+        System.out.println("GANHOU " + this.getVitorias() + "VEZES ");
+        System.out.println("PERDEU " + this.getDerrotas() + "VEZES ");
+        System.out.println("EMPATOU " + this.getDerrotas() + "VEZES ");
+   
+                
     }
     public void ganharLuta(){
         this.setVitorias(this.getVitorias() + 1);
