@@ -22,7 +22,7 @@ public class Lutador {
     public void apresentar(){
         System.out.println("CHEGOU A HORA ! Apresentamos o lutador " + this.getNome() );
         System.out.println("Diretamente de " + this.getNacionalidade());
-        System.out.println("Com " + this.getIdade() + " Anos e " + this.getAltura());
+        System.out.println("Com " + this.getIdade() + " Anos e " +  + this.getAltura() + "m");
         System.out.println("Pesando " + this.getPeso() + "Kg ");
         System.out.println(this.getVitorias() + " Vitórias");
         System.out.println(this.getDerrotas() + " Derrotas ");
@@ -33,7 +33,8 @@ public class Lutador {
         System.out.println("É UM PESO " + this.getCategoria());
         System.out.println(" GANHOU " + this.getVitorias() + " VEZES ");
         System.out.println(" PERDEU " + this.getDerrotas() +  " VEZES ");
-        System.out.println(" EMPATOU " + this.getDerrotas() + " VEZES ");
+        System.out.println(" EMPATOU " + this.getEmpate()+ " VEZES ");
+        
    
                 
     }
