@@ -11,7 +11,8 @@ package ultraemojicombat;
  */
 public class Lutador {
     //ATRIBUTOS
-   private String nome,nacionalidade;
+   private String nome;
+   private String nacionalidade;
    private int idade;
    private float altura,peso;
    private String categoria;
@@ -19,18 +20,25 @@ public class Lutador {
             
 
     public void apresentar(){
-
-}
+        System.out.println("CHEGOU A HORA ! Apresentamos o lutador " + this.getNome() );
+        System.out.println("Diretamente de" + this.getNacionalidade());
+        System.out.println("Com " + this.getIdade() + "Anose e " + this.getAltura());
+        System.out.println("Pesando " + this.getPeso() + "Kg");
+        System.out.println(this.getVitorias() + "Vitórias");
+}   
     public void status(){
         
     }
     public void ganharLuta(){
+        this.setVitorias(this.getVitorias() + 1);
         
     }
     public void perderLuta(){
+        this.setDerrotas(this.getDerrotas() + 1);
         
     }
     public void empatarLuta(){
+        this.setEmpate(this.getEmpate() + 1);
         
     }
 
@@ -45,13 +53,23 @@ public class Lutador {
         this.derrotas = de;
         this.empate = em;
     }
-
+    
+   
     public String getNome() {
         return nome;
     }
+     
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    
+    public String getNacionalidade(){
+       return this.nacionalidade;
+        
+    }
+    public void setNacionalidade(String nacionalidade){
+        this.nacionalidade = nacionalidade;
     }
 
     public int getIdade() {
@@ -83,7 +101,7 @@ public class Lutador {
         return categoria;
     }
 
-    public void setCategoria() {
+    private void setCategoria() {
         this.categoria = categoria;
         if(this.peso <=52.2){
             this.categoria = "INVÁLIDO";
