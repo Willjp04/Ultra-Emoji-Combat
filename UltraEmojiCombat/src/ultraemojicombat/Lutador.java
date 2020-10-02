@@ -21,8 +21,8 @@ public class Lutador {
 
     public void apresentar(){
         System.out.println("CHEGOU A HORA ! Apresentamos o lutador " + this.getNome() );
-        System.out.println("Diretamente de" + this.getNacionalidade());
-        System.out.println("Com " + this.getIdade() + "Anose e " + this.getAltura());
+        System.out.println("Diretamente de " + this.getNacionalidade());
+        System.out.println("Com " + this.getIdade() + " Anos e " + this.getAltura());
         System.out.println("Pesando " + this.getPeso() + "Kg");
         System.out.println(this.getVitorias() + "Vitórias");
         System.out.println(this.getDerrotas() + "Derrotas ");
@@ -49,13 +49,12 @@ public class Lutador {
         
     }
 
-    public Lutador(String no, String na, int id, float al, float pe, String ca, int vi, int de, int em) {
+    public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em) {
         this.nome = no;
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
         this.peso = pe;
-        this.categoria = ca;
         this.vitorias = vi;
         this.derrotas = de;
         this.empate = em;
@@ -109,8 +108,7 @@ public class Lutador {
     }
 
     private void setCategoria() {
-        this.categoria = categoria;
-        if(this.peso <=52.2){
+               if(this.peso <=52.2){
             this.categoria = "INVÁLIDO";
             
           } else if (this.peso <= 70.3){
