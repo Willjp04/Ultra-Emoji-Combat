@@ -43,8 +43,10 @@ public class UltraEmojiCombat {
    
    System.out.println("------------------------");
     l[5] = new Lutador("Werdaart", "EUA",38, 1.81f,105.7f,12,2,4 );
-    l[5].apresentar();
-    l[5].status();
+    
+    l[3].ganharLuta();
+    l[3].perderLuta();
+    l[3].status();
     
     
     }
