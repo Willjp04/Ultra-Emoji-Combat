@@ -25,15 +25,21 @@ public class Luta {
                
            } else {
                this.aprovado = true;
-               
-               
-           
-           
-               
+              
+                                               
            }
        }
        
        public void lutar(){
+           if (this.aprovado){
+               System.out.println("##### DESAFIADO ##### ");
+               this.desafiado.apresentar();
+               System.out.println("##### DESAFIANTE ##### ");
+               this.desafiante.apresentar();
+               
+           } else {
+               System.out.println("A LUTA NÃO PODE ACONTECER ");
+           }
            
            
            
