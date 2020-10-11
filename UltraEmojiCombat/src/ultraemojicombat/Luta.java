@@ -38,9 +38,10 @@ public class Luta {
                this.desafiado.apresentar();
                System.out.println("##### DESAFIANTE ##### ");
                this.desafiante.apresentar();
-               
+                            
                
                Random aleatorio = new Random();
+               System.out.println("======RESULTADO DA LUTA======");
                int vencedor = aleatorio.nextInt(3);
                switch(vencedor){
                    case 0:
@@ -55,13 +56,14 @@ public class Luta {
                        break;
                    case 2:
                        System.out.println("VITORIA DO " + this.desafiante.getNome());
+                       System.out.println("=========================");
                        this.desafiado.perderLuta();
                        this.desafiante.ganharLuta();
                        break;
-                       
-               }
-           } else {
-               System.out.println("A LUTA NÃO PODE ACONTECER ");
+                                      }
+           
+           } else{
+               System.out.println("A LUTRA NÃO PODE ACONTECER ");
            }
            
            
