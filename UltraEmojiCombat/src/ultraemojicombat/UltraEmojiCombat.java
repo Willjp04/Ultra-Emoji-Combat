@@ -48,7 +48,8 @@ public class UltraEmojiCombat {
     l[3].perderLuta();
     l[3].status();
     
-    
+    Luta UEC01 = new Luta();
+    UEC01.marcarLuta(l[0], l[1]);
     }
    
     
