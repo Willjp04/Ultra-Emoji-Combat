@@ -5,6 +5,8 @@
  */
 package ultraemojicombat;
 
+import java.util.Random;
+
 /**
  *
  * @author PORTOMASTER
@@ -37,6 +39,27 @@ public class Luta {
                System.out.println("##### DESAFIANTE ##### ");
                this.desafiante.apresentar();
                
+               
+               Random aleatorio = new Random();
+               int vencedor = aleatorio.nextInt(3);
+               switch(vencedor){
+                   case 0:
+                       System.out.println("EMPATOU ");
+                       this.desafiado.empatarLuta();
+                       this.desafiante.empatarLuta();
+                       break;
+                   case 1:
+                       System.out.println("VENCEU " + this.desafiado);
+                       this.desafiado.ganharLuta();
+                       this.desafiante.perderLuta();
+                       break;
+                   case 2:
+                       System.out.println("VENCEU " + this.desafiante);
+                       this.desafiado.perderLuta();
+                       this.desafiante.ganharLuta();
+                       break;
+                       
+               }
            } else {
                System.out.println("A LUTA NÃO PODE ACONTECER ");
            }
